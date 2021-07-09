@@ -11,7 +11,7 @@ public class BuilderMainTest {
 		System.out.println("************************************");
 		
 		//creationBuilder
-		CreationBuilder builder=new CreationBuilder.Builder().surname("Mızrak").age(36).build();
+		CreationBuilder builder=new CreationBuilder.Builder().name("Hamit").surname("mızrak").build();
 		System.out.println(builder);
 		
          System.out.println("************************************");

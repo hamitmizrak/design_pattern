@@ -1,18 +1,11 @@
 package com.hamitm.creational.builder;
 
-import java.util.Date;
-
+// Builder: 1.adım toString
+// Builder: 2.adım innerClass
 public class CreationBuilder {
-	
-	// Builder: 1.adım toString
-	// Builder: 2.adım innerClass
 	
 	private String name;
 	private String surname;
-	private String country;
-	private int age;
-	private String emailAddres;
-	private Date date;
 	
 	// parametresiz constructor
 	public CreationBuilder() {
@@ -23,17 +16,13 @@ public class CreationBuilder {
 	public CreationBuilder(Builder builder) {
 		this.name = builder.name;
 		this.surname = builder.surname;
-		this.country = builder.country;
-		this.age = builder.age;
-		this.emailAddres = builder.emailAddres;
-		this.date = builder.date;
+		
 	}
 	
 	// toString
 	@Override
 	public String toString() {
-		return "BuilderClass [name=" + name + ", surname=" + surname + ", country=" + country + ", age=" + age
-				+ ", emailAddres=" + emailAddres + ", date=" + date + "]";
+		return "BuilderClass [name=" + name + ", surname=" + surname + "]";
 	}
 	
 	// getter and setter
@@ -53,38 +42,6 @@ public class CreationBuilder {
 		this.surname = surname;
 	}
 	
-	public String getCountry() {
-		return country;
-	}
-	
-	public void setCountry(String country) {
-		this.country = country;
-	}
-	
-	public int getAge() {
-		return age;
-	}
-	
-	public void setAge(int age) {
-		this.age = age;
-	}
-	
-	public String getEmailAddres() {
-		return emailAddres;
-	}
-	
-	public void setEmailAddres(String emailAddres) {
-		this.emailAddres = emailAddres;
-	}
-	
-	public Date getDate() {
-		return date;
-	}
-	
-	public void setDate(Date date) {
-		this.date = date;
-	}
-	
 	/////////////////////////////////////////////////////
 	
 	// 2.ADIM innerclass
@@ -93,10 +50,6 @@ public class CreationBuilder {
 	public static class Builder {
 		private String name;
 		private String surname;
-		private String country;
-		private int age;
-		private String emailAddres;
-		private Date date;
 		
 		// parametresiz constructor metotlar
 		public Builder() {
@@ -110,26 +63,6 @@ public class CreationBuilder {
 		
 		public Builder surname(String surname) {
 			this.surname = surname;
-			return this;
-		}
-		
-		public Builder country(String country) {
-			this.country = country;
-			return this;
-		}
-		
-		public Builder age(int age) {
-			this.age = age;
-			return this;
-		}
-		
-		public Builder emailAddres(String emailAddres) {
-			this.emailAddres = emailAddres;
-			return this;
-		}
-		
-		public Builder date(Date date) {
-			this.date = date;
 			return this;
 		}
 		
