@@ -9,7 +9,8 @@ public class FactoryMainTest {
 	System.out.println("************************************************************");
 	
 	IBilgisayar macBilgisayar=	BilgisayarFabrikasi.getBilgisayar("mac");
-	System.out.println(macBilgisayar);
+	System.out.println(macBilgisayar); 
+	
 	}
 	
 }
