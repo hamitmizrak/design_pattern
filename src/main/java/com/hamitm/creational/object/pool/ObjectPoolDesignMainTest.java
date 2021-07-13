@@ -1,6 +1,6 @@
 package com.hamitm.creational.object.pool;
 
-public class ObkjectPoolDesignMainTest {
+public class ObjectPoolDesignMainTest {
 	
 	public static void main(String[] args) {
 		UsesObjectDesign usesObjectDesign=ObjectPoolDesign.getObjectPoolDesign().getUsesObjectDesign();
