@@ -21,6 +21,15 @@ Developers Hamit Mızrak
 2-7) Decorator Design Pattern <br/>
 
 # Behavioral Design Pattern
+3-1) Strategy Design Pattern <br/>
+3-2) Template Design Pattern <br/>
+3-3) Mediator Design Pattern <br/>
+3-4) Chain Of Responsibility Design Pattern <br/>
+3-5) Command Design Pattern <br/>
+3-6) Iterator Design Pattern <br/>
+3-7) Memento Design Pattern <br/>
+3-8) Observer Design Pattern <br/>
+3-9) Interpreter Design Pattern <br/>
 
 
 
